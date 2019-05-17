@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+<body>
+     <!-- 顶部 -->
+  <div id="header_container">
+    
+    </div>
+<!-- 内容 -->
+<div id="detail">
+<div class="mian-warps">
+        <script type="text/html" id="detail-template">
+    <div class="product-mian">
+        <div class="product-info">
+        <div class="product-title">
+            <h1 class="item-name">{{data.detailname}}</h1>
+            <h2 class="product-bigjieshao">{{data.detailjianjie}}</h2>
+        </div>
+        <div class="product-colorchose">
+            <div class="product-spec">
+                <span class="spec-name">颜色选择</span>
+                <ul class="spec-info">
+                        {{ each data.detaiimgs item }}
+                    <li>
+                        <div>
+                            <span><img src="{{item.detailimages}}"></span>
+                        </div>
+                        <label>{{item.miaoshu}}（{{item.miaoshu}}）</label>
+                    </li>
+                    {{/each}}
+                       
+                </ul>
+            </div>
+        </div>
+        <div class="product-spec-warp">
+                <div class="product-spec">
+                        <span class="spec-name-aa">容量选择</span>
+                        <ul class="spec-info-in">
+                                {{ each data.detaiimgs item }}
+                          <li>
+                              <div class="specs-item">
+                                  <h4 class="item-name">{{item.detailimgmiaoshu}}G + {{item.detailimgmiaoshu}}GB</h4>
+                              </div>
+                          </li>
+                          {{/each}}
+                        </ul>
+                    </div>
+            </div>  
+    </div>
+    
+                <div class="gallery-wrapper">
+                    <!-- <img src="{{data.img}}"> -->
+
+                    <div _ngcontent-c6="" class="gallery picture" >
+                            <div _ngcontent-c6="" class="view_thumbs thumbnail" id="gal1">
+                                <ul _class="view-ul">
+                                    <!---->
+                                    <li  class="current"> 
+                                        <a href="#" data-image="{{data.bigimages[0].bigimage}}" data-zoom-image="{{data.bigimages[0].bigimage}}">
+                                        <img class="s" src="{{data.bigimages[0].bigimage}}">
+                                        </a>
+                                    </li>
+                                    <li class="on"> 
+                                         <a href="#" data-image="{{data.bigimages[1].bigimage}}" data-zoom-image="{{data.bigimages[1].bigimage}}">
+                                        <img class="s" src="{{data.bigimages[1].bigimage}}">
+                                        </a>
+                                    </li>
+                                    <li> 
+                                       <a href="#" data-image="{{data.bigimages[2].bigimage}}" data-zoom-image="{{data.bigimages[2].bigimage}}">
+                                        <img class="s"  src="{{data.bigimages[2].bigimage}}">
+                                    </a>
+                                    </li>
+                                    <li> 
+                                    <a href="#" data-image="{{data.bigimages[3].bigimage}}" data-zoom-image="{{data.bigimages[3].bigimage}}">
+                                     <img class="s" src="{{data.bigimages[3].bigimage}}">
+                                    </a>
+                                </ul>
+                            </div>
+                            <div  class="view_bd thumb">
+                              <img  class="zoom-img" alt="" src="{{data.bigimages[0].bigimage}}" data-zoom-image="{{data.bigimages[0].bigimage}}">
+                            </div>
+                        </div>
+                </div>
+        
+          
+    </div>
+
+</div>
+
+    <!-- 底部 -->
+   <footer class="footer">
+        <div class="footer-wraps">
+            <h1 class="footer-text">您已经选择了</h1>
+            <div class="footer-info">
+                <h1 class="clearfix">
+                    <span class="pricea">{{data.detailname}}</span>
+                    <span class = "price">
+                        <i>￥</i>
+                        <span>{{data.detailprice}}</span>
+                    </span>
+                </h1>
+                <h2>
+                    <span class="color-a">纯白色  丨
+                        <span></span>
+                    </span>
+                    <span class="canshu">16G+128gb</span>
+                </h2>
+            </div>
+        </div>
+        <div class="bar-accc">
+            <h1 class="pricea">附加商品</h1>
+            <h2 class="price">与手机一同下单，将免费送货</h2>
+
+        </div>
+        <div class="bar-accc">
+                <h1 class="pricea">运费</h1>
+                <h2 class="price">￥0.00</h2>
+    
+            </div>
+            <div class="bar-btn" id="addcart">
+                    <a href="/html/cart.html">添加到购物车</a>
+                </div>
+        <div class="now-price">
+            <i>￥</i>
+            <span>{{data.detailprice}}</span>
+        </div>
+        
+   </footer> 
+
+</script>
+</div>
+    <script src="/libs/requirejs/require.js" data-main="/js/detail"></script>
+</body>
+</html>

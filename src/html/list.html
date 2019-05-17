@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/list.css">
+</head>
+<body>
+     <!-- 顶部 -->
+  <div id="header_container">
+    
+    </div>
+<div class="list-container" id="list">
+    <div class="list-wraps" id="listContainer">
+        <script type="text/html" id="list-monopoly">
+        <ul>
+            {{each list item}}
+            <a href="/html/detail.html?id={{item.id}}" class = "list-a">
+            <li class="item-four">
+                <div class="product-item">
+                    <img src="{{item.img}}">
+                    <div class="params-colors">
+                            <ul class="color-list">
+                              <li class="color-list-li">
+                                <div class="outer"><img src="https://resource.smartisan.com/resource/bf1fbd3de44ee3ae65d7b0daa7343cb4.jpg?x-oss-process=image/resize,w_20"></div>
+                              </li>
+                            </ul>
+                          </div>
+                          <h4 class="item-text">{{item.listname}}</h4>
+                            <h6 class="item-text-miaoshu">{{item.listmiaoshu}}</h6>
+                          <div class="item-price">
+                             <span>
+                               <i>￥</i><span>{{item.listprice}}</span>
+                             </span>
+                        </div>
+                          </div>        
+                   
+            </li>
+          </a>
+            {{ /each}}
+        </ul>
+      </script>
+    </div>
+</div>
+
+<!-- 底部 -->
+<div id="footer_container">
+ 
+    </div>
+
+
+<script src="/libs/requirejs/require.js" data-main="/js/list"></script>
+</body>
+</html>

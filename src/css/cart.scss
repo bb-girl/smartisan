@@ -1,0 +1,278 @@
+@import "module/base.scss";
+@import "module/header.scss";
+.div,h1,h2{
+    margin: 0;
+    padding: 0;
+}
+.mian-contanier{
+    width: 1220px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 8px;
+}
+.gray-box{
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    color: #666;
+}
+.title{
+    position: relative;
+    z-index: 10;
+    height: 50px;
+    padding: 0 10px 0 20px;
+    border-bottom: 1px solid #d4d4d4;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,.06);
+    background: linear-gradient(#fbfbfb,#ececec);
+    line-height: 50px;
+    font-size: 18px;
+    color: #666;
+    font-weight: 700;
+}
+.title span{
+    line-height: 50px;
+    font-size: 18px;
+    color: #666;
+    font-weight: 700;
+}
+.cart-item{
+    overflow: hidden;
+}
+.cart-table-title[_ngcontent-c15] {
+    position: relative;
+    z-index: 1;
+    line-height: 38px;
+    height: 38px;
+    padding: 0 20px;
+    font-size: 12px;
+    background: #eee;
+    border-bottom: 1px solid #dbdbdb;
+    border-bottom-color: rgba(0,0,0,.08);}
+    .cart-table-title[_ngcontent-c15] .name[_ngcontent-c15] {
+        float: left;
+        text-align: left;
+    }
+    .subtotals{
+        color: #838383;
+        float: right;
+        width: 137px;
+        text-align: right;
+    }
+    .cart-table-title[_ngcontent-c15] span[_ngcontent-c15] {
+        color: #838383;
+        float: right;
+        width: 137px;
+}
+.num{
+    width: 137px;
+    margin: 0 -10px 0 70px;
+    float: right;
+    text-align: center;
+    color: #838383;
+}
+.cart-group{
+position: relative;
+
+}
+.items-thumb{
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    float: left;
+
+}
+.items-thumb a{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    border: 0 solid hsla(0,0%,100%,.1);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.06);
+}
+.hide-row{
+    width: 380px;
+    margin-left: 30px;
+    color: #323232;
+    display: table;
+    float: left;
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 45px;
+}
+.name-table{
+    display: table-cell;
+    vertical-align: middle;
+    height: 110px;
+}
+.subtotal{
+    text-align: right;
+    font-size: 14px;
+    overflow: hidden;
+    float: right;
+    width: 137px;
+    height: 70px;
+    color: #666;
+    font-weight: 700;
+    margin-right: 15px;
+    line-height: 110px;
+        width: 80px;
+}
+.item-cols-num{
+    float: right;
+    width: 137px;
+    height: 70px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 700; 
+    padding-top: 35px;
+    line-height: 40px;
+    margin: 0 15px 0 70px;
+}
+.prices{
+    float: right;
+    width: 137px;
+    font-weight: 700;
+    padding-top: 35px;
+    line-height: 40px;
+    margin: 0 55px 0 70px;
+}
+.fix-checkout-bar{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fafafa;
+    border-top: 1px solid #e3e3e3;
+    box-shadow: 0 -1px 3px rgba(0,0,0,.04);
+    z-index: 25;
+    font-size: 14px;
+    color: #666;
+}
+.fix-bar-wrapper{
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+}
+.detail-box{
+    display: flex;
+    flex-direction: row;
+}
+.checkout-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-box{
+    padding: 0 30px ;
+}
+.count{
+    padding: 0 !important;
+    margin-left: 0;
+}
+.head{
+    font-size: 12px;
+    color: #7d7d7d;
+    margin-bottom: 10px; 
+}
+.number{
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+}
+.money{
+    font-size: 14px;
+    font-weight: 600;
+    color: #d44d44;
+}
+.pricess{
+    margin-right: 30px;
+    font-weight: 400;
+    color: #666;
+}
+.symbol{
+    font-size: 14px;
+    font-weight: 600;
+    color: #d44d44;
+}
+span[_ngcontent-c5] {
+    font-size: 20px;
+    font-weight: 600;
+    color: #d44d44;
+}
+.payment-blue-btn{
+    width: 118px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 6px;
+    background-color: #6383c6;
+    background-image: linear-gradient(#6383c6,#4262af);
+    margin-top: -2px;
+    padding: 1px;
+}
+.addleft{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 8px;
+    margin-right: 5px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #6383c6;
+    cursor: pointer;
+
+}
+.addright{
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top: 8px;
+    margin-right: 70px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #6383c6;
+    cursor: pointer;
+}   
+.check-boxes{ 
+    height: 60px;
+    width: 50px;
+    float: left;
+    margin-top: 20px;
+
+}
+.checkbo{
+    margin: 15px;
+}
+.shanchu{
+    float: left;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+}

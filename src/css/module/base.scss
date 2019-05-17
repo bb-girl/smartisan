@@ -1,0 +1,20 @@
+html,body,ul{
+    margin: 0;
+    padding: 0;
+
+}
+ul li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    
+}
+.cl:after{
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+    display: block;
+}

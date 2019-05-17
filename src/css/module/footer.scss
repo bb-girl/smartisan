@@ -1,0 +1,137 @@
+
+.footer_warps{
+    width: 1220px;
+    height: 354px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.setinfo{
+    
+    height: 108px;
+    padding: 60px 0 55px;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: content-box;
+    
+}
+.nav_footer{
+    float: left;
+    height: 117px;
+    
+
+}
+.nav_footer li{
+    margin-right: 90px;
+    
+    float: left;
+}
+.nav_footer li ul{
+    width: 50px;
+    height: 80px;
+}
+.nav_footer li h3{
+    
+    color: #646464;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0 0 20px;
+    
+
+}
+
+.nav_footer li ul li{
+    width: 50px;
+    
+    font-size: 12px;
+    padding: 7px 0;
+    line-height: 1;
+}
+.nav_footer li ul li a{
+    color: #969696;
+}
+.service{
+    float: right;
+    position: relative;
+}
+.tel{
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1;
+    cursor: default;
+    color: #5079d9;
+    position: relative;
+    width: 241px;
+    text-align: right;
+}
+.time{
+    font-size: 12px;
+    color: #999;
+    margin-top: 15px;
+    width: 241px;
+    line-height: 1;
+    text-align: right;
+}
+.desc{
+    width: 241px;
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+    margin-top: 5px;
+}
+.online a{
+    float: right;
+    width: 132px;
+    height: 30px;
+    line-height: 30px;
+    background:#fcfcfc;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 15px;
+    color:  #5079d9;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.copyright{
+    width: 1220px;
+    height: 40px;
+    padding: 30px 0 60px;
+    font-size: 12px;
+}
+.copyright h4{
+    margin: 0;
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    color: #bdbdbd;
+    font-weight: 400;
+}
+.copyright_list{
+    float: left;
+    margin: 0 0 0 12px;
+}
+.copyright_list li{
+   
+    float: left;
+    line-height: 12px;
+    padding: 1px 10px 0;
+    border-left: 1px solid #ccc;
+    
+}
+.copyright_list li a{
+        height: 15px;
+        line-height: 15px;
+        color: #bdbdbd;
+}
+.copyright h6{
+    color: #bdbdbd;
+    padding: 10 0 0;
+    height: 15px;
+    font-weight: 400;
+}
+.copyright h6 a span{
+    margin-right: 20px;
+    color: #bdbdbd;
+}
+

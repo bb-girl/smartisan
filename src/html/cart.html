@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="header_container">
+    
+        </div>
+    <!-- 内容 -->
+   
+    
+    <div class="mian-contanier">
+        <div _ngcontent-c15="" class="gray-box" id="cart_box">
+                <div _ngcontent-c15="" class="title">
+                    <span _ngcontent-c15="">购物清单</span>
+                </div>
+                <div _ngcontent-c15="" class="box-inner">
+                    <div _ngcontent-c15="">
+                        <div _ngcontent-c15="" class="cart-table-title goods-cart-table-title"> <span _ngcontent-c15="" class="name">商品信息</span>
+                            <span _ngcontent-c15="" class="subtotals">应付金额</span> <span _ngcontent-c15="" class="num">数量</span> <span
+                             _ngcontent-c15="" class="price">单价</span> </div>
+                        <div _ngcontent-c15="" class="cart-table">
+                       
+                                <div _ngcontent-c15="" class="cart-group" id="list-containers">
+                                        
+                                        <script type="text/html" id="cart-template">
+                                            {{each cart item}}
+                                                <div class="cart-item">
+                                                        <div class="check-boxes">
+                                                            <input type="checkbox" class="checkbo" checked="checked">
+                                                            <span class="shanchu">删除</span>
+                                                        </div>
+                                                        <div class="items-thumb"> <img height="80" width="80" src="{{item.img}}"
+                                                             alt="Smartisan T恤 丑小鸭（男款，绿色，XXXL）">
+                                                             <a title="Smartisan T恤 丑小鸭（男款，绿色，XXXL）"></a> 
+                                                            </div>
+                                                        <div class="name hide-row">
+                                                            <div>
+                                                                <a title="Smartisan T恤 丑小鸭（男款，绿色，XXXL）">{{item.detailname}}（{{item.detailjianjie}}）</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class = "">
+                                                            <div class="subtotal"><i>¥</i> <span  class = "zongjia">{{item.detailprice*item.num}}</span></div>
+                                                            <div class="item-cols-num"><div class="addleft">-</div> <span data-id = "{{item.id}}">{{item.num}}</span> <div class="addright">+</div></div>
+                                                            <div class="prices"><i>¥</i> <span class="danjia">{{item.detailprice}}</span></div>
+                                                    </div>  
+                                                    
+                                    </div>
+                                    {{/each}}
+                                                </script>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <!-- 尾部 -->
+        <div _ngcontent-c5="" class="fix-checkout-bar follow">
+                <div _ngcontent-c5="" class="fix-bar-wrapper">
+                    <div _ngcontent-c5="" class="detail-box item-box">
+                        <div _ngcontent-c5="" class="count item-box">
+                            <div _ngcontent-c5="" class="head">商品件数</div>
+                            <div _ngcontent-c5="" class="number"></div>
+                        </div>
+                        <div _ngcontent-c5="" class="total-price item-box">
+                            <div _ngcontent-c5="" class="head">商品总价</div>
+                            <div _ngcontent-c5="" class="money" id = "fentotalprices">¥ <span class = "fentotalprices">149.00</span></div>
+                        </div>
+                        <div _ngcontent-c5="" class="discount item-box">
+                            <div _ngcontent-c5="" class="head">活动优惠</div>
+                            <!---->
+                            <div _ngcontent-c5="" class="money">- ¥ 0.00 </div>
+                            <!---->
+                        </div>
+                        <div _ngcontent-c5="" class="coupon-discount item-box">
+                            <div _ngcontent-c5="" class="head">优惠券抵扣</div>
+                            <div _ngcontent-c5="" class="money">- ¥ 00.00 </div>
+                        </div>
+                        <!---->
+                        <div _ngcontent-c5="" class="freight item-box">
+                            <div _ngcontent-c5="" class="head">运费
+                                <!---->
+                            </div>
+                            <div _ngcontent-c5="" class="money">¥ 0.00</div>
+                        </div>
+                    </div>
+                    <div _ngcontent-c5="" class="checkout-box">
+                        <div _ngcontent-c5="" class="pricess">应付总额： <span class="symbol">￥</span> <span _ngcontent-c5="" class = "fentotalprices">129.00</span>
+                        </div>
+                        <div _ngcontent-c5="" class="payment-blue-btn"> <a _ngcontent-c5="">提交订单</a> </div>
+                    </div>
+                </div>
+            </div>
+    
+        <script src="/libs/requirejs/require.js" data-main="/js/cart"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>锤子手机</title>
+  <link rel="stylesheet" href="libs/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+
+
+</head>
+
+<body>
+  <!-- 顶部 -->
+  <div id="header_container">
+
+  </div>
+  <!-- 轮播图 -->
+  <div class="mian-container">
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img
+          src="img/lunbo1.jpg">
+      </div>
+      <div class="swiper-slide"><img
+          src="img/lunbo2.jpg">
+      </div>
+    </div>
+    
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- 如果需要滚动条 -->
+   
+  </div>
+
+
+
+    <div class="wiper_container_list_container">
+      <div class="wiper_container_warps topin" id="lists">
+        <header class="storey-title">
+          <h5>热门商品</h5>
+          <div class="home-page">
+            <a class="home-page-btn"></a>
+            <a class="home-page-btn"></a>
+          </div>
+          <div class="category-normla-warp">
+            <section class="items-warps" id="list-container">
+              <script type="text/html" id="list-monopoly">
+                      <ul class="item-hot-items">
+                            {{each list item}}
+                            <a href="/html/detail.html?id={{item.id}}" class = "list-a">
+                        <li class="item-four">
+                          
+                          <div class="product-box-item">
+                            <div>
+                              <div class="item-img"><img src="{{item.img}}"></div>
+                              <h4 class="item-text">{{item.titlename}}</h4>
+                              <h6 class="item-text-miaoshu">{{item.titlemiaoshu}}{{item.id}}</h6>
+                            </div>
+                            <div class="params-colors">
+                              <ul class="color-list">
+                                <li class="color-list-li">
+                                  <div class="outer"><img src="https://resource.smartisan.com/resource/bf1fbd3de44ee3ae65d7b0daa7343cb4.jpg?x-oss-process=image/resize,w_20"></div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="item-price">
+                               <span>
+                                 <i>￥</i><span>{{item.price}}</span>
+                               </span>
+                            </div>
+                            <div class="item-price-button">
+                              <button>查看详情</button>
+                            </div>
+                          </div>
+                        </li>
+                      </a>
+                        {{ /each}}	
+                        
+                      </ul>
+                    </script>
+            </section>
+
+          </div>
+        </header>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 底部 -->
+  <div id="footer_container">
+
+  </div>
+
+
+  <script src="/libs/requirejs/require.js" data-main="/js/index"></script>
+</body>
+
+</html>

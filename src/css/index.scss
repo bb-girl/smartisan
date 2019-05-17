@@ -1,0 +1,224 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+.main-container{
+    background: #ededed;
+    overflow: hidden;
+}
+.swiper-container{
+    margin: 0 auto;
+    width: 1220px;
+    height: 491px;
+    margin-top: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.14);
+    border-radius: 8px;
+    box-shadow: 0 3px 8px -6px rgba(0,0,0,.1);
+
+}
+
+.swiper-wrapper{
+    margin: 0 auto;
+    margin-top: 9px;
+    width: 1220px;
+    height: 491px;
+    
+    
+}
+.swiper-slide img{
+    margin-top: -40px;
+    width: 100%;
+}
+.wiper_container_warps{
+    position: relative;
+    margin-top: 9px;
+    height: 491px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.14);
+    border-radius: 8px;
+    box-shadow: 0 3px 8px -6px rgba(0,0,0,.1);
+}
+.topin{
+    margin: 0 auto;
+    width:1220px;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+.storey-title{
+    position: relative;
+    font-size: 18px;
+    line-height: 60px;
+    color: #666;
+    background: #fafafa;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.storey-title h5{
+    
+    font-weight: 700;
+    margin: 0;
+    font-size: 100%;
+    margin-left: 25px;
+
+}
+.home-page{
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    height: 60px;
+}
+.home-page-btn{
+    display: inline-block;
+    margin-left: -10px;
+    float: left;
+    border: none;
+    width: 48px;
+    height: 48px;
+    background: url("/img/pagebtn.png") no-repeat center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.home-page-btn:nth-child(1){
+    transform: rotateY(180deg);
+}
+.category-normla-warp{
+    font-size: 14px;
+    color: #666;
+}
+.items-hot-items{
+    overflow: hidden;
+    width: 2440px;
+    transform: translate(-1220px, 0px);
+    margin: 0 -1px -1px;
+    overflow: hidden;
+    transition: all .5s;
+}
+.item-four{
+    overflow: hidden;
+    width: 303px;
+    float: left;
+    position: relative;
+    height: 429px;
+    background: #fff;
+    transition: all .2s;
+    border-left: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    border-top: 1px solid #efefef;
+    border-radius: initial;
+}
+.item-four:hover{
+    box-shadow: 4px 4px 30px 0px rgba(0,0,0,.05) inset;
+    position: relative;
+    box-sizing: border-box; 
+    cursor: pointer;
+}
+.product-box-item{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+}
+
+.item-img img{
+    width: 216px;
+    height: 216px;
+    margin: 0 auto;
+    padding: 25px 0 20px;
+    margin: 0 44px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0s;
+}
+.item-text{
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+    margin: 0 8px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 16px;
+}
+.item-text-miaoshu{
+    padding-top: 15px;
+    font-size: 12px;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    color: #999;
+    text-align: center;
+    margin: 0;
+}
+.params-colors{
+    text-align: center;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.color-list{
+    transition: all .5s;
+}
+.color-list-li{
+    float: left;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.outer{
+    box-shadow: inset 0 0 0 1px #b2b2b2;
+    border-color: #b2b2b2;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    padding: 2px;
+    transition: all .15s ease-out;
+}
+.outer img{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    display: block;
+}
+.item-price{
+    color: #d44d44;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+    transition: all .1s ease-out;
+    line-height: 1.15;
+    
+    
+}
+.item-price span{
+    font-size: 18px;
+   
+}
+.item-price-button{
+    position: absolute;
+    bottom: 10px;
+    left: 120px;
+    display: none;
+}
+.item-price-button button{
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #646464;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(#fff,#f9f9f9);
+    width: 100px;
+    height: 30px;
+}
+.item-price span i{
+    margin-right: 8px;
+}
+.xiaoshi{
+    display: none;
+}
+.chuxian{
+    display: block;
+
+}
+

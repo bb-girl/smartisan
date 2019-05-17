@@ -1,0 +1,113 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+
+.list-container{
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+    margin-top:20px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    border-color: rgba(0,0,0,.14);
+    box-shadow: 0 3px 8px -6px rgba(0,0,0,.1);
+    overflow: hidden;
+}
+.list-wraps ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1px -1px;
+    overflow: hidden;
+}
+.item-four{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.product-item{
+    position: relative;
+    padding: 20px;
+}
+.product-item img{
+    width: 204px;
+    height: 204px;
+    text-align: center;
+
+}
+.list-a{
+    width: 20%;
+    height: auto;
+    color: #333;
+}
+.item-text{
+    height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    opacity: .8;
+    white-space: nowrap;
+    text-align: center;
+    margin: 0;
+}
+.item-text-miaoshu{
+    display: block;
+    margin: 10px 0;
+    height: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+    opacity: .5;
+    margin: 5px 0;
+}
+.params-colors{
+    text-align: center;
+    height: 14px;
+    margin-bottom: 15px;
+
+}
+.color-list{
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+}
+.color-list-li{
+    cursor: pointer;
+    margin: 0 5px;
+}
+.outer{
+    box-shadow: inset 0 0 0 1px #b2b2b2;
+    border-color: #b2b2b2;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    padding: 2px;
+    transition: all .15s ease-out;
+}
+.outer img{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    display: block;
+}
+.item-price{
+    color: #d44d44;
+    font-weight: 700;
+    text-align: center;
+    transition: all .1s ease-out;
+    line-height: 1.15;
+    
+    
+}
+.item-price span{
+    font-size: 18px;
+   
+}
+
+.item-price span i{
+    margin-right: 8px;
+}
