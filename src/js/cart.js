@@ -12,17 +12,17 @@ require(['require.config'], () => {
             // 计算总价
             total(cart){
                 let sum = 0;
-                
+                let geshu =0 ;
                 cart.forEach( item => {                 
                         if(item.checked == true){
                            
                             sum += item.num*item.detailprice
-                           
+                            geshu += item.num;
                            
                         }
                 });   
-                $(".fentotalprices").html(sum);
-                console.log(sum);
+                $(".fentotalprices").html((sum).toFixed(2));
+                $(".number").html(geshu);
 
             }
         //    默认事件
@@ -81,7 +81,7 @@ require(['require.config'], () => {
                          cart.forEach( item => {
                              if(item.id == id){
                                  item.num = num
-                                 item.sumer =  item.detailprice*item.num;
+                                 item.sumer =  (item.detailprice*item.num).toFixed(2);
                                  localStorage.setItem('cart', JSON.stringify(cart));                                  
                                  $(target).parents(".cart-item").find(".zongjia").html(item.sumer);
                              }
@@ -99,33 +99,27 @@ require(['require.config'], () => {
                         cart.forEach( item => {
                             if(item.id == id){
                                 item.num = num;
-                                item.sumer =  item.detailprice*item.num;
+                                item.sumer = (item.detailprice*item.num).toFixed(2);
                                 localStorage.setItem('cart', JSON.stringify(cart));
                                 $(target).parents(".cart-item").find(".zongjia").html(item.sumer);
-
                             }
                         });
                          this.total(cart); 
                     }
-                     
-                })
-
-                
+    
+                })                
             }
             // 单选按按钮
             check(cart){
                 let _this=this;
-                $("#list-containers").on('change', ".checkbo", function () {
-                    
+                $("#list-containers").on('change', ".checkbo", function () {                   
                 let  checks = $(this).prop("checked");
                 let id = $(this).parents(".cart-item").find(".addleft").next().attr("data-id");
                 console.log(id);
                 cart.forEach( item => {
                     if(item.id == id){
                        item.checked = checks;
-                       localStorage.setItem('cart', JSON.stringify(cart));
-                       
-                      
+                       localStorage.setItem('cart', JSON.stringify(cart));  
                     }
                 });
                 _this.total(cart);
